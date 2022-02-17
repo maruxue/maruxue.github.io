@@ -14,7 +14,7 @@ class Lifecyclepage extends Component {
         };
         console.log('constructor');
     }
-    UNSAFE_componentWillMount(){
+    componentWillMount(){
         console.log('UNSAFE_componentWillMount')
     }
     componentDidMount(){
@@ -28,7 +28,7 @@ class Lifecyclepage extends Component {
         //false就不渲染页面
         return count !== 3;
     }
-    UNSAFE_componentWillUpdate (){
+    componentWillUpdate (){
         console.log('UNSAFE_componentWillUpdate')
     }
     componentDidUpdate(){
@@ -60,7 +60,7 @@ class Child extends Component{
     // UNSAFE_componentWillUpdate
     // UNSAFE_UNSAFE_componentWillReceiveProps() 会在已挂载的组件接收新的 props 之前被调⽤用
     // 初次渲染的时候不会执行，只有再已挂载的组件接收新的props的时候才会执行
-    UNSAFE_componentWillReceiveProps(nextProps){
+    componentWillReceiveProps(nextProps){
         console.log('UNSAFE_componentWillReceiveProps',nextProps)
     }
     // 组件将要被卸载
